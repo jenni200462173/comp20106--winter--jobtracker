@@ -1,8 +1,12 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  color: black;
+  font:14px;
 }
 
 a {
   color: #00B7FF;
+}
+main{
+  margin-top: 25px;
 }

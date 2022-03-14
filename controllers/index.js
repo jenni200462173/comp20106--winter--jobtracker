@@ -7,3 +7,12 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+
+
+/* GET about page */
+router.get('/about',(req,res) => {
+    // load the about .hbs view
+    res.render('about', {title:'About'});
+});
+
+module.exports = router;
