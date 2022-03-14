@@ -22,6 +22,13 @@ router.get('/', (req,res) => {
     })
 })
 
+/* GET/ employers/create => load empty employer form */
+router.get('/create',(req,res) =>{
+    res.render('employers/create',{
+        title: 'Employer Details'
+    })
+})
+
 
 // express this file so it is public
 module.exports = router 
