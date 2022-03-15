@@ -4,8 +4,16 @@
     {{#each employers}}
     <div class="card col 4">
         <div class="card-body">
-            <h5 class="card-tittle">{{this.name}}</h5>
+            <h5 class="card-tittle">
+                <a href="/employers/edit/{{this._id}}">
+                     {{this.name}}
+                </a>
+            </h5>
             <p class="card-text">{{this.location}}</p>
+            <a class="btn btn-warning" href="/employers/delete/{{this._id}}"
+            onclick="return confirmDelete()">
+            Delete
+            </a>
         </div>
     {{/each}}
 </section>
